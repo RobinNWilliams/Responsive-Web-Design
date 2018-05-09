@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+  max-width: 880px;
+	width: 100%;
+	margin: auto;
 }
 
 /* Header Styles */
@@ -76,7 +77,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +135,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -173,3 +174,74 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+ /* Tablets */
+ @media (max-width: 768px) {
+
+	 .container {
+		 width: 768px
+
+}
+
+  	header {
+			flex-wrap: wrap;
+
+	}
+
+	header nav {
+		width: 768px;
+		justify-content: space-around;
+		padding-left: 10px;
+
+
+	}
+	header .logo {
+
+		order: -1;
+		padding-left: 190px;
+
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.cta-text {
+		width: 768px;
+
+		margin: 0;
+	}
+
+.main-content .top-content {
+	width: 768px;
+	margin: 0;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+.main-content .middle-img {
+	width: 768px;
+	margin: 0;
+	padding: 10px;
+}
+.main-content .bottom-content {
+	justify-content: center;
+	margin: 0;
+	padding-left: 10px;
+}
+.contact p {
+ margin:0px;
+
+
+}
+	}
+ }
+
+
+
+
+
+
+
+
+ /*Phones*/
