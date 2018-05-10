@@ -175,7 +175,8 @@ footer {
     margin: 40px 0 20px;
 }
 
- /* Tablets */
+ /* Tablet */
+
  @media (max-width: 768px) {
 
 	 .container {
@@ -235,13 +236,109 @@ footer {
 
 }
 	}
+
+
+/* Mobile */
+
+@media(max-width: 400px) {
+
+	.container {
+	 width: 400px;
+
+}
+
+		header {
+		width: 100%;
+
+	}
+
+		header nav {
+		width: 100%;
+		padding: 40px;
+		flex-direction: column;
+		padding: 0;
+
+	}
+
+		header nav a {
+		width: 100%;
+		border: 1px solid black;
+		padding:0px 40px 40px 0px;
+		text-align: center;
+		font-size: 20px;
+		flex-direction: column;
+
+}
+
+		header .logo {
+		width: 100%;
+		height: 40px;
+		padding-right: 10px;
+		margin:0px 0px 0px 0px;
+	  border: 1px solid red;
+}
+
+		.cta img {
+	 	display: none;
+}
+
+		.cta .cta-text {
+		width: 100%;
+		margin-left: 200px;
+		margin-bottom:
+		flex-direction: column;
+		border: 1px solid red;
+}
+
+		.cta .cta-text button {
+			width: 170px;
+
+		}
+
+		.main-content {
+			width:100%;
+
+		}
+  	.main-content .top-content {
+		width: 100%;
+		margin: 10 0 0 10;
+   	flex-direction: column;
+		padding:10px 0px 10px 10px;
+
+}
+
+ 		.main-content .middle-img {
+		width: 100%;
+	 	margin: 20px 0px 0px 0px;
+	 	padding: 15px;
+}
+ .main-content .text-content {
+	 width: 100%;
+	 padding: 10px;
+	 margin: 10 10 10 20px;
  }
 
+	 .main-content .bottom-content {
+		 width: 100%;
+		 padding-left: 10px;
+		 padding-top: 0px;
+		 flex-direction: column;
+}
+	 .contact {
+		 margin-left: 10px;
+		 padding-left: 10px;
+		 padding-top: 20px;
+}
+
+	.contact p {
+		padding: 10px;
+	}
+	.footer {
+		border: 1px solid red;
+		width: 100%;
+		height: 100px;
+		margin: 0 0 50 0;
 
 
-
-
-
-
-
- /*Phones*/
+	}
+}
